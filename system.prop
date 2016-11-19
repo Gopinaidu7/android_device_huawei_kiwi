@@ -133,6 +133,14 @@ ro.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 persist.radio.add_power_save=1
 persist.radio.modem.cap=7E442
+persist.volte_enalbed_by_hw=1
+net.lte.volte_call_capable=true
+persist.ims.volte=true
+persist.radio.ROTATION_ENABLE=1
+persist.radio.VT_ENABLE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.VT_USE_MDM_TIME=0
+persist.radio.calls.on.ims=true
 
 # Tethering
 sys.usb.rps_mask=10
