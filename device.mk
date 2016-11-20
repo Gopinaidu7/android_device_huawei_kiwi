@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-    libmm-qcamera
+    libmm-qcamera \
+    Snap
 
 # Compatibility
 PRODUCT_PACKAGES += \
@@ -132,6 +133,10 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
+
+# Include IMSEnabler
+PRODUCT_PACKAGES += \
+    IMSEnabler
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
@@ -188,9 +193,11 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
     init.qcom.rc \
+    init.qcom.ims.rc \
     init.qcom.power.rc \
     init.qcom.power.sh \
     init.qcom.usb.rc \
+    init.qti.ims.sh \
     init.target-from-init.rc \
     init.target.rc \
     ueventd.qcom.rc
